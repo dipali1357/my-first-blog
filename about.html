@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>About Django</title>
+<body>
+	{{aboutme}}
+	<div>
+		<img src="{% static "images/img1.jpeg" %}" alt="first image is not displayed"/>
+	
+		<img src="{{MEDIA_URL}}img1.jpeg" alt="second image is not displayed"/>
+
+	</div>
+</body>
+</html>
